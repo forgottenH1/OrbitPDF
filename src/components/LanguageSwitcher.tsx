@@ -13,7 +13,8 @@ const LANGUAGES = [
     { code: 'ru', label: 'Русский', short: 'RU' },
     { code: 'pt', label: 'Português', short: 'PT' },
     { code: 'uk', label: 'Українська', short: 'UK' },
-    { code: 'tr', label: 'Türkçe', short: 'TR' }
+    { code: 'tr', label: 'Türkçe', short: 'TR' },
+    { code: 'it', label: 'Italiano', short: 'IT' }
 ];
 
 const LanguageSwitcher: React.FC = () => {

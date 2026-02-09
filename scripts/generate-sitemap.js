@@ -9,7 +9,7 @@ const __dirname = path.dirname(__filename);
 // Configuration
 // IMPORTANT: Replace this with your actual domain name before deploying (e.g., https://my-app.netlify.app)
 const BASE_URL = 'https://orbitpdf.pages.dev';
-const LANGUAGES = ['en', 'es', 'fr', 'ar', 'ja', 'zh', 'de', 'ru', 'pt', 'uk', 'tr'];
+const LANGUAGES = ['en', 'es', 'fr', 'ar', 'ja', 'zh', 'de', 'ru', 'pt', 'uk', 'tr', 'it'];
 
 // Paths
 const TOOLS_PATH = path.join(__dirname, '../src/data/tools.ts');

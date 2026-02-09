@@ -16,6 +16,7 @@ import ru from './locales/ru/translation.json';
 import pt from './locales/pt/translation.json';
 import uk from './locales/uk/translation.json';
 import tr from './locales/tr/translation.json';
+import it from './locales/it/translation.json';
 
 i18n
     // detect user language
@@ -48,6 +49,7 @@ i18n
             pt: { translation: pt },
             uk: { translation: uk },
             tr: { translation: tr },
+            it: { translation: it },
         }
     });
 

@@ -134,13 +134,13 @@ const SignaturePad: React.FC<SignaturePadProps> = ({ onSave, onClear }) => {
                     onClick={() => { setMode('draw'); clearCanvas(); }}
                     className={`flex-1 py-1.5 text-sm font-medium rounded-md transition-all ${mode === 'draw' ? 'bg-blue-500 text-white shadow-sm' : 'text-slate-400 hover:text-white'}`}
                 >
-                    Draw
+                    {t('processor.signature.draw')}
                 </button>
                 <button
                     onClick={() => { setMode('type'); clearCanvas(); }}
                     className={`flex-1 py-1.5 text-sm font-medium rounded-md transition-all ${mode === 'type' ? 'bg-blue-500 text-white shadow-sm' : 'text-slate-400 hover:text-white'}`}
                 >
-                    Type
+                    {t('processor.signature.type')}
                 </button>
             </div>
 
@@ -160,7 +160,7 @@ const SignaturePad: React.FC<SignaturePadProps> = ({ onSave, onClear }) => {
 
                 {mode === 'type' && typedName.length === 0 && (
                     <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                        <span className="text-slate-300 text-2xl font-light">Preview Area</span>
+                        <span className="text-slate-300 text-2xl font-light">{t('processor.signature.previewArea')}</span>
                     </div>
                 )}
             </div>
@@ -170,7 +170,7 @@ const SignaturePad: React.FC<SignaturePadProps> = ({ onSave, onClear }) => {
                 <div className="space-y-4 mb-4 animate-in fade-in slide-in-from-top-2 duration-200">
                     <input
                         type="text"
-                        placeholder="Type your name..."
+                        placeholder={t('processor.signature.typePlaceholder')}
                         value={typedName}
                         onChange={(e) => setTypedName(e.target.value)}
                         className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white focus:outline-none focus:border-blue-500 transition-all"
@@ -194,7 +194,7 @@ const SignaturePad: React.FC<SignaturePadProps> = ({ onSave, onClear }) => {
             )}
 
             <div className="flex justify-between items-center text-sm text-slate-400">
-                <span>{mode === 'draw' ? 'Draw' : 'Type'} your signature above</span>
+                <span>{t(mode === 'draw' ? 'processor.signature.drawInstruction' : 'processor.signature.typeInstruction')}</span>
                 <button
                     onClick={clearCanvas}
                     className="text-red-400 hover:text-red-300 transition-colors"

@@ -13,6 +13,7 @@ const SUPPORTED_LANGUAGES: Record<string, { code: string; label: string }> = {
     'pt': { code: 'pt', label: 'Português' },
     'uk': { code: 'uk', label: 'Українська' },
     'tr': { code: 'tr', label: 'Türkçe' },
+    'it': { code: 'it', label: 'Italiano' },
 };
 
 const LanguageSuggestion: React.FC = () => {

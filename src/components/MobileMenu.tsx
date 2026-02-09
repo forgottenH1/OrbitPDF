@@ -54,7 +54,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, openModal }) =
                 {/* Close Button */}
                 <button
                     onClick={onClose}
-                    className="absolute top-6 right-6 p-2 text-slate-400 hover:text-white transition-colors z-50 rounded-full hover:bg-white/10"
+                    className="absolute top-3 right-6 p-2 text-slate-400 hover:text-white transition-colors z-50 rounded-full hover:bg-white/10"
                     aria-label={t('nav.ariaClose')}
                 >
                     <X className="w-8 h-8" />

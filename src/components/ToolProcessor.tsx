@@ -590,51 +590,51 @@ const ToolProcessor: React.FC<ToolProcessorProps> = ({ toolId, toolName, onBack 
                                                         className={`h-12 rounded-lg border flex items-center justify-center transition-all ${signatureOptions.alignmentY === 'top' && signatureOptions.alignmentX === 'left'
                                                             ? 'bg-blue-500 border-blue-400 text-white shadow-lg shadow-blue-500/20'
                                                             : 'border-white/10 hover:bg-white/5 text-slate-400'
-                                                            }`} title="Top Left">↖</button>
+                                                            }`} title={t('processor.tooltips.topLeft')}>↖</button>
                                                     <button onClick={() => setSignatureOptions(prev => ({ ...prev, alignmentY: 'top', alignmentX: 'center' }))}
                                                         className={`h-12 rounded-lg border flex items-center justify-center transition-all ${signatureOptions.alignmentY === 'top' && signatureOptions.alignmentX === 'center'
                                                             ? 'bg-blue-500 border-blue-400 text-white shadow-lg shadow-blue-500/20'
                                                             : 'border-white/10 hover:bg-white/5 text-slate-400'
-                                                            }`} title="Top Center">↑</button>
+                                                            }`} title={t('processor.tooltips.topCenter')}>↑</button>
                                                     <button onClick={() => setSignatureOptions(prev => ({ ...prev, alignmentY: 'top', alignmentX: 'right' }))}
                                                         className={`h-12 rounded-lg border flex items-center justify-center transition-all ${signatureOptions.alignmentY === 'top' && signatureOptions.alignmentX === 'right'
                                                             ? 'bg-blue-500 border-blue-400 text-white shadow-lg shadow-blue-500/20'
                                                             : 'border-white/10 hover:bg-white/5 text-slate-400'
-                                                            }`} title="Top Right">↗</button>
+                                                            }`} title={t('processor.tooltips.topRight')}>↗</button>
 
                                                     {/* Center Row */}
                                                     <button onClick={() => setSignatureOptions(prev => ({ ...prev, alignmentY: 'center', alignmentX: 'left' }))}
                                                         className={`h-12 rounded-lg border flex items-center justify-center transition-all ${signatureOptions.alignmentY === 'center' && signatureOptions.alignmentX === 'left'
                                                             ? 'bg-blue-500 border-blue-400 text-white shadow-lg shadow-blue-500/20'
                                                             : 'border-white/10 hover:bg-white/5 text-slate-400'
-                                                            }`} title="Center Left">←</button>
+                                                            }`} title={t('processor.tooltips.centerLeft')}>←</button>
                                                     <button onClick={() => setSignatureOptions(prev => ({ ...prev, alignmentY: 'center', alignmentX: 'center' }))}
                                                         className={`h-12 rounded-lg border flex items-center justify-center transition-all ${signatureOptions.alignmentY === 'center' && signatureOptions.alignmentX === 'center'
                                                             ? 'bg-blue-500 border-blue-400 text-white shadow-lg shadow-blue-500/20'
                                                             : 'border-white/10 hover:bg-white/5 text-slate-400'
-                                                            }`} title="Center">✛</button>
+                                                            }`} title={t('processor.tooltips.center')}>✛</button>
                                                     <button onClick={() => setSignatureOptions(prev => ({ ...prev, alignmentY: 'center', alignmentX: 'right' }))}
                                                         className={`h-12 rounded-lg border flex items-center justify-center transition-all ${signatureOptions.alignmentY === 'center' && signatureOptions.alignmentX === 'right'
                                                             ? 'bg-blue-500 border-blue-400 text-white shadow-lg shadow-blue-500/20'
                                                             : 'border-white/10 hover:bg-white/5 text-slate-400'
-                                                            }`} title="Center Right">→</button>
+                                                            }`} title={t('processor.tooltips.centerRight')}>→</button>
 
                                                     {/* Bottom Row */}
                                                     <button onClick={() => setSignatureOptions(prev => ({ ...prev, alignmentY: 'bottom', alignmentX: 'left' }))}
                                                         className={`h-12 rounded-lg border flex items-center justify-center transition-all ${signatureOptions.alignmentY === 'bottom' && signatureOptions.alignmentX === 'left'
                                                             ? 'bg-blue-500 border-blue-400 text-white shadow-lg shadow-blue-500/20'
                                                             : 'border-white/10 hover:bg-white/5 text-slate-400'
-                                                            }`} title="Bottom Left">↙</button>
+                                                            }`} title={t('processor.tooltips.bottomLeft')}>↙</button>
                                                     <button onClick={() => setSignatureOptions(prev => ({ ...prev, alignmentY: 'bottom', alignmentX: 'center' }))}
                                                         className={`h-12 rounded-lg border flex items-center justify-center transition-all ${signatureOptions.alignmentY === 'bottom' && signatureOptions.alignmentX === 'center'
                                                             ? 'bg-blue-500 border-blue-400 text-white shadow-lg shadow-blue-500/20'
                                                             : 'border-white/10 hover:bg-white/5 text-slate-400'
-                                                            }`} title="Bottom Center">↓</button>
+                                                            }`} title={t('processor.tooltips.bottomCenter')}>↓</button>
                                                     <button onClick={() => setSignatureOptions(prev => ({ ...prev, alignmentY: 'bottom', alignmentX: 'right' }))}
                                                         className={`h-12 rounded-lg border flex items-center justify-center transition-all ${signatureOptions.alignmentY === 'bottom' && signatureOptions.alignmentX === 'right'
                                                             ? 'bg-blue-500 border-blue-400 text-white shadow-lg shadow-blue-500/20'
                                                             : 'border-white/10 hover:bg-white/5 text-slate-400'
-                                                            }`} title="Bottom Right">↘</button>
+                                                            }`} title={t('processor.tooltips.bottomRight')}>↘</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -706,7 +706,7 @@ const ToolProcessor: React.FC<ToolProcessorProps> = ({ toolId, toolName, onBack 
                                                                 key={pos}
                                                                 onClick={() => setWatermarkPosition(pos)}
                                                                 className={`h-8 rounded-md border transition-all ${watermarkPosition === pos ? 'bg-indigo-600 border-indigo-400' : 'bg-slate-800 border-slate-700 hover:bg-slate-700'}`}
-                                                                title={pos}
+                                                                title={t(`processor.tooltips.${pos.replace(/-([a-z])/g, (g) => g[1].toUpperCase())}`)}
                                                             />
                                                         ))}
                                                     </div>
