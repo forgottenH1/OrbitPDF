@@ -259,7 +259,6 @@ const ScriptAd = ({ script, className, isSidebar }: { script: string, className:
                     title="Ad Content"
                     className="w-full h-full border-0 overflow-hidden"
                     scrolling="no"
-                    scrolling="no"
                 />
             ) : (
                 <div className="w-full h-full bg-slate-800/20 animate-pulse" />
