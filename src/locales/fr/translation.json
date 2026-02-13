@@ -745,12 +745,11 @@
         "title": "Page Non Trouvée",
         "desc": "La page que vous recherchez a peut-être été supprimée ou est temporairement indisponible.",
         "back": "Retour Accueil"
+    },
+    "adBlock": {
+        "title": "Bloqueur de publicité détecté",
+        "message": "Aidez-nous à garder OrbitPDF gratuit. Nous utilisons la publicité pour financer nos serveurs et rendre nos outils accessibles à tous. Veuillez envisager de désactiver votre bloqueur pour nous soutenir.",
+        "button": "Je l'ai désactivé, rafraîchir",
+        "dismiss": "Continuer sans désactiver"
     }
-},
-"adBlock": {
-    "title": "Bloqueur de publicité détecté",
-    "message": "Aidez-nous à garder OrbitPDF gratuit. Nous utilisons la publicité pour financer nos serveurs et rendre nos outils accessibles à tous. Veuillez envisager de désactiver votre bloqueur pour nous soutenir.",
-    "button": "Je l'ai désactivé, rafraîchir",
-    "dismiss": "Continuer sans désactiver"
-}
 }
