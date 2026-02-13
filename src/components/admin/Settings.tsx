@@ -72,7 +72,7 @@ const Settings: React.FC = () => {
             if (settingsRes.success && campsRes.success) {
                 setMessage({ type: 'success', text: 'Settings & Weights saved successfully!' });
             } else {
-                setMessage({ type: 'error', text: settingsRes.error || adsRes.error || 'Failed to save changes' });
+                setMessage({ type: 'error', text: settingsRes.error || campsRes.error || 'Failed to save changes' });
             }
         } catch (e) {
             setMessage({ type: 'error', text: 'An unexpected error occurred.' });

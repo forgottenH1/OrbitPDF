@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { Advertiser, Campaign, AdPlacement, AdStatus } from '../../types/admin';
 import { adminService } from '../../services/adminService';
-import { Plus, Edit2, Trash2, Check, X, Calendar, Link as LinkIcon, Image as ImageIcon, AlertCircle, Clock } from 'lucide-react';
+import { Edit2, Trash2, Check, X, Calendar, Link as LinkIcon, Image as ImageIcon, Clock } from 'lucide-react';
 
 interface Props {
     advertisers: Advertiser[];
@@ -31,7 +31,7 @@ export default function CampaignManager({ advertisers, campaigns, setCampaigns }
         setTempData({});
     };
 
-    const validateCampaign = (campaign: Partial<Campaign>, currentId?: string): string | null => {
+    const validateCampaign = (campaign: Partial<Campaign>): string | null => {
         if (!campaign.placement || !campaign.startDate || !campaign.endDate) return "Missing required fields";
 
         const start = new Date(campaign.startDate).getTime();

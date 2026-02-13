@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { Advertiser, Campaign, AdPlacement, AdStatus, AdTier } from '../../types/admin';
+import { useState, useEffect } from 'react';
+import { Advertiser, Campaign, AdPlacement, AdTier } from '../../types/admin';
 import { adminService } from '../../services/adminService';
-import { X, Check, ArrowRight, ArrowLeft, User, Calendar, Image as ImageIcon, AlertTriangle } from 'lucide-react';
+import { X, Check, ArrowRight, Calendar, AlertTriangle } from 'lucide-react';
 
 import { addDays } from '../../utils/dateUtils';
 
@@ -106,14 +106,14 @@ export default function CampaignWizard({ onClose, onSuccess, advertisers, campai
         setError(null);
         if (currentStep === 'advertiser') {
             if (isNewAdvertiser) {
-                if (!newAdvertiser.companyName) return setError('Company Name is required') || false;
-                if (!newAdvertiser.email) return setError('Email is required') || false;
+                if (!newAdvertiser.companyName) { setError('Company Name is required'); return false; }
+                if (!newAdvertiser.email) { setError('Email is required'); return false; }
             } else {
-                if (!selectedAdvertiserId) return setError('Please select an advertiser') || false;
+                if (!selectedAdvertiserId) { setError('Please select an advertiser'); return false; }
             }
         } else if (currentStep === 'details') {
-            if (!campaign.placement) return setError('Placement is required') || false;
-            if (!campaign.startDate || !campaign.endDate) return setError('Dates are required') || false;
+            if (!campaign.placement) { setError('Placement is required'); return false; }
+            if (!campaign.startDate || !campaign.endDate) { setError('Dates are required'); return false; }
 
             // Check overlaps
             const startStr = campaign.startDate;
@@ -121,7 +121,7 @@ export default function CampaignWizard({ onClose, onSuccess, advertisers, campai
             const start = new Date(startStr!).getTime(); // Start of day 00:00
             const end = new Date(endStr!).setHours(23, 59, 59, 999); // End of day 23:59
 
-            if (start > end) return setError('Start date must be before end date') || false;
+            if (start > end) { setError('Start date must be before end date'); return false; }
 
             // Overlap check REMOVED to allow multiple active campaigns (Rotation System)
             // const overlapping = campaigns.find(c => ... );

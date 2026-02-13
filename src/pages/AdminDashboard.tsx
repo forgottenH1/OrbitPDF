@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { adminService } from '../services/adminService';
 import { Advertiser, Campaign, DashboardStats } from '../types/admin';
 import { Loader2, LayoutDashboard, Users, Megaphone, Settings as SettingsIcon, MonitorUp, AlertTriangle, LogOut } from 'lucide-react';
