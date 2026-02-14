@@ -48,5 +48,18 @@
     "id": "1771081650454",
     "advertiserId": "1771081650401",
     "tier": "silver-right"
+  },
+  {
+    "status": "active",
+    "placement": "sidebar-left",
+    "startDate": "2026-02-14",
+    "clicks": 0,
+    "endDate": "2026-02-28",
+    "imageUrl": "/ads/desktop/sidebar/sidebar-left/mp4 healthy food.mp4",
+    "link": "https://orbitpdf.pages.dev/advertise",
+    "id": "1771083189858",
+    "advertiserId": "1771083189846",
+    "tier": "silver-left",
+    "customWeight": 12
   }
 ]
