@@ -86,7 +86,7 @@ export default function App() {
                 <meta property="og:description" content={pageDescription} />
                 <meta name="twitter:title" content={pageTitle} />
                 <meta name="twitter:description" content={pageDescription} />
-                {activeToolData && <link rel="canonical" href={`https://orbitpdf.com/?tool=${activeToolData.id}`} />}
+                {activeToolData && <link rel="canonical" href={`https://orbitpdf.pages.dev/?tool=${activeToolData.id}`} />}
             </Helmet>
 
             {/* 1. Header / Navbar */}

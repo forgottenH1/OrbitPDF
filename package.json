@@ -8,6 +8,7 @@
     "build": "npm run validate:json && tsc && vite build",
     "preview": "vite preview",
     "validate:json": "node scripts/validate-json.cjs",
+    "generate-sitemap": "node scripts/generate-sitemap.js",
     "admin-server": "node scripts/admin-server.cjs",
     "dev:admin": "concurrently \"npm run dev\" \"npm run admin-server\""
   },
