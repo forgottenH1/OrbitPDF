@@ -164,29 +164,70 @@ app.get('/api/images', (req, res) => {
     res.json(images);
 });
 
-// 4. Deployment (Git Push)
+// Helper to generate dummy advertisers for public deployment
+const generateDummyAdvertisers = (realAdvertisers) => {
+    return realAdvertisers.map((adv, index) => ({
+        ...adv,
+        companyName: `Advertiser ${index + 1}`,
+        contactName: `Contact ${index + 1}`,
+        email: `advertiser${index + 1}@example.com`,
+        notes: 'Private notes hidden for public deployment.',
+        website: 'https://example.com'
+    }));
+};
+
+// 4. Deployment (Git Push) with Secure Data Swap
 app.post('/api/deploy', async (req, res) => {
-    console.log('Starting deployment sequence...');
+    console.log('Starting deployment sequence with SAFE DATA SWAP...');
+    const backupPath = path.join(DATA_DIR, 'advertisers.backup.json');
 
     try {
-        // Step 1: Add changes
+        // 1. Backup Real Data
+        const realAdvertisers = readJson(ADVERTISERS_FILE);
+        if (!writeJson(backupPath, realAdvertisers)) {
+            throw new Error('Failed to create backup of advertisers data.');
+        }
+        console.log('Step 1: Backed up real advertiser data.');
+
+        // 2. Generate and Save Dummy Data
+        const dummyAdvertisers = generateDummyAdvertisers(realAdvertisers);
+        if (!writeJson(ADVERTISERS_FILE, dummyAdvertisers)) {
+            throw new Error('Failed to swap in dummy advertiser data.');
+        }
+        console.log('Step 2: Swapped in dummy advertiser data.');
+
+        // 3. Git Operations
+        // We add the files (now containing dummy data for advertisers)
         await runCommand('git add src/data/advertisers.json src/data/campaigns.json src/data/settings.json');
 
-        // Step 2: Commit (might skip if no changes)
         try {
-            await runCommand('git commit -m "Update ads via Admin Dashboard"');
+            await runCommand('git commit -m "Update ads via Admin Dashboard (Secure Push)"');
         } catch (e) {
             console.log('Nothing to commit, proceeding to push...');
         }
 
-        // Step 3: Push
         await runCommand('git push');
+        console.log('Step 3: Deployment successful!');
 
-        console.log('Deployment successful!');
-        res.json({ success: true, message: 'Deployed to GitHub successfully!' });
+        res.json({ success: true, message: 'Deployed to GitHub successfully with dummy data!' });
+
     } catch (error) {
         console.error('Deployment failed:', error);
-        res.status(500).json({ success: false, error: 'Deployment failed', details: error });
+        res.status(500).json({ success: false, error: 'Deployment failed', details: error.toString() });
+    } finally {
+        // 4. Restore Real Data
+        // This runs whether the try block succeeded or failed, ensuring we don't lose data
+        if (fs.existsSync(backupPath)) {
+            const realData = readJson(backupPath);
+            if (writeJson(ADVERTISERS_FILE, realData)) {
+                fs.unlinkSync(backupPath); // Delete backup file only if restore succeeded
+                console.log('Step 4: Restored real advertiser data.');
+            } else {
+                console.error('CRITICAL ERROR: Failed to restore real advertiser data from backup!');
+            }
+        } else {
+            console.warn('Warning: No backup file found to restore.');
+        }
     }
 });
 
