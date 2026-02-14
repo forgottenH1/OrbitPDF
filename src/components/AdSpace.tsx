@@ -246,22 +246,17 @@ const ScriptAd = ({ script, className, isSidebar }: { script: string, className:
                 //    AdSense scripts usually look like: <script>...</script> <ins ...></ins> <script>...</script>
                 //    We need to reconstruct the <ins> element safely in the DOM.
 
-                // Regex to find attributes in <ins> tag
-                const insMatch = script.match(/<ins([^>]+)><\/ins>/);
-                if (insMatch) {
-                    const insAttributes = insMatch[1];
-                    const insElement = document.createElement('ins');
+                // Create a temporary container to parse the string
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = script;
 
-                    // Parse attributes (simple regex parser)
-                    const attrRegex = /(\w+)="([^"]+)"/g;
-                    let match;
-                    while ((match = attrRegex.exec(insAttributes)) !== null) {
-                        insElement.setAttribute(match[1], match[2]);
-                    }
+                // Find the <ins> tag
+                const insElement = tempDiv.querySelector('ins');
 
-                    // Append <ins> to container
-                    containerRef.current.innerHTML = ''; // Clear container
-                    containerRef.current.appendChild(insElement);
+                if (insElement) {
+                    // Clear container and append the cloned <ins> tag
+                    containerRef.current.innerHTML = '';
+                    containerRef.current.appendChild(insElement.cloneNode(true));
 
                     // Trigger AdSense
                     // @ts-ignore
