@@ -5,5 +5,12 @@
     "sidebar-left": true,
     "sidebar-right": true,
     "interstitial": true
+  },
+  "adsense": {
+    "header": false,
+    "footer": false,
+    "sidebar-left": false,
+    "sidebar-right": false,
+    "interstitial": false
   }
 }

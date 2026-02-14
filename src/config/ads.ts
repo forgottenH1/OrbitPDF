@@ -92,10 +92,38 @@ const getAdsForPlacement = (placement: string): AdData[] => {
         });
 };
 
+// Helper: Check if a script is an AdSense tag
+export const isAdSenseScript = (script: string): boolean => {
+    return /adsbygoogle/i.test(script) || /pagead2\.googlesyndication\.com/i.test(script);
+};
+
+// Middleware to filter ads based on AdSense toggle Settings
+const getFilteredAds = (placement: string): AdData[] => {
+    const ads = getAdsForPlacement(placement);
+    const settings = (settingsData as any);
+
+    // Check if AdSense is strictly enabled for this specific zone
+    // If true -> Show ONLY AdSense ads
+    // If false -> Show ONLY Non-AdSense ads
+    const isAdSenseExclusive = settings.adsense?.[placement] === true;
+
+    return ads.filter(ad => {
+        const isAdSense = ad.script && isAdSenseScript(ad.script);
+
+        if (isAdSenseExclusive) {
+            // If AdSense Zone is ON, show ONLY AdSense ads
+            return isAdSense;
+        } else {
+            // If AdSense Zone is OFF, show ONLY Non-AdSense ads
+            return !isAdSense;
+        }
+    });
+};
+
 export const currentAds: AdZones = {
-    'sidebar-left': getAdsForPlacement('sidebar-left'),
-    'sidebar-right': getAdsForPlacement('sidebar-right'),
-    header: getAdsForPlacement('header'),
-    footer: getAdsForPlacement('footer'),
+    'sidebar-left': getFilteredAds('sidebar-left'),
+    'sidebar-right': getFilteredAds('sidebar-right'),
+    header: getFilteredAds('header'),
+    footer: getFilteredAds('footer'),
     interstitial: []
 };

@@ -147,6 +147,61 @@ const Settings: React.FC = () => {
 
             <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 mb-6">
                 <h3 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
+                    <span className="text-orange-400 font-bold">G</span>
+                    Google AdSense Zones
+                </h3>
+                <p className="text-slate-400 mb-6 text-sm">
+                    Toggle Google AdSense injection for specific zones.
+                    <br />
+                    <span className="text-emerald-400 font-bold">ON:</span> Only Google AdSense ads will show.
+                    <br />
+                    <span className="text-slate-400 font-bold">OFF:</span> Only custom/other ads will show.
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {placements.map(placement => {
+                        // Check nested adsense object, default to true if undefined
+                        // Using 'any' cast temporarily as we update the type on the fly or just rely on the JSON structure
+                        const isAdSenseActive = (settings as any).adsense?.[placement.id] !== false;
+
+                        return (
+                            <div
+                                key={`adsense-${placement.id}`}
+                                className={`flex items-center justify-between p-4 rounded-lg border transition-all ${isAdSenseActive
+                                    ? 'bg-blue-900/10 border-blue-500/30 hover:border-blue-500/50'
+                                    : 'bg-slate-800/50 border-slate-700 hover:border-slate-600'
+                                    }`}
+                            >
+                                <div className="flex flex-col">
+                                    <span className="font-medium text-slate-200">{placement.label}</span>
+                                    <span className="text-xs text-slate-500">AdSense source</span>
+                                </div>
+                                <button
+                                    onClick={() => {
+                                        setSettings(prev => ({
+                                            ...prev,
+                                            adsense: {
+                                                ...((prev as any).adsense || {}),
+                                                [placement.id]: !isAdSenseActive
+                                            }
+                                        }));
+                                    }}
+                                    className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-slate-900 ${isAdSenseActive ? 'bg-blue-500' : 'bg-slate-700'
+                                        }`}
+                                >
+                                    <span
+                                        className={`${isAdSenseActive ? 'translate-x-6' : 'translate-x-1'
+                                            } inline-block h-4 w-4 transform rounded-full bg-white transition-transform`}
+                                    />
+                                </button>
+                            </div>
+                        );
+                    })}
+                </div>
+            </div>
+
+            <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 mb-6">
+                <h3 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
                     <RefreshCw className="w-5 h-5 text-purple-400" />
                     Advertiser Frequency Weights
                 </h3>

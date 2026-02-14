@@ -1,47 +1,47 @@
 [
   {
     "id": "1770983144720",
-    "companyName": "Advertiser 1",
-    "contactName": "Contact 1",
-    "email": "advertiser1@example.com",
+    "companyName": "no",
+    "contactName": "youb raby",
+    "email": "gtgogeta@gmail.com",
     "tier": "bronze",
-    "notes": "Private notes hidden for public deployment.",
-    "website": "https://example.com"
+    "notes": "",
+    "website": ""
   },
   {
     "id": "1770990298608",
-    "companyName": "Advertiser 2",
-    "contactName": "Contact 2",
-    "email": "advertiser2@example.com",
+    "companyName": "Adsterra ADS",
+    "contactName": "Adsterra ",
+    "email": "Adsterra",
     "tier": "unassigned",
-    "notes": "Private notes hidden for public deployment.",
-    "website": "https://example.com"
+    "notes": "",
+    "website": ""
   },
   {
     "id": "1770998030663",
-    "companyName": "Advertiser 3",
-    "contactName": "Contact 3",
-    "email": "advertiser3@example.com",
+    "companyName": "adil company",
+    "contactName": "adil lotfi",
+    "email": "gtgogeta@gmail.com",
     "tier": "silver-right",
-    "notes": "Private notes hidden for public deployment.",
-    "website": "https://example.com"
+    "notes": "",
+    "website": ""
   },
   {
     "id": "1771081650401",
-    "companyName": "Advertiser 4",
-    "contactName": "Contact 4",
-    "email": "advertiser4@example.com",
+    "companyName": "Charika jdida",
+    "contactName": "modir charika",
+    "email": "gtgogeta@gmail.com",
     "tier": "silver-right",
-    "notes": "Private notes hidden for public deployment.",
-    "website": "https://example.com"
+    "notes": "",
+    "website": ""
   },
   {
     "id": "1771083189846",
-    "companyName": "Advertiser 5",
-    "contactName": "Contact 5",
-    "email": "advertiser5@example.com",
+    "companyName": "Societe 9dima",
+    "contactName": "mol societe",
+    "email": "gtgogeta@gmail.com",
     "tier": "silver-left",
-    "notes": "Private notes hidden for public deployment.",
-    "website": "https://example.com"
+    "notes": "",
+    "website": ""
   }
 ]

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { currentAds, AdData } from '../config/ads';
+import settingsData from '../data/settings.json';
 
 interface AdSpaceProps {
     placement: 'header' | 'footer' | 'sidebar-left' | 'sidebar-right' | 'interstitial';
@@ -9,6 +10,9 @@ interface AdSpaceProps {
 
 const AdSpace: React.FC<AdSpaceProps> = ({ placement, className = '' }) => {
     const { t } = useTranslation();
+
+    // Check if AdSense is exclusive for this zone
+    const isAdSenseExclusive = (settingsData as any).adsense?.[placement] === true;
 
     // Weighted Random Selection: Selects an ad based on 'weight' property
     const activeAd: AdData | undefined = React.useMemo(() => {
@@ -161,6 +165,12 @@ const AdSpace: React.FC<AdSpaceProps> = ({ placement, className = '' }) => {
     }
 
     // Fallback / Self-Promo (Default behavior now since Sanity is removed)
+    // CRITICAL: If AdSense Exclusive is ON and no ad was found, DO NOT show fallback.
+    // Collapse the space entirely.
+    if (isAdSenseExclusive && !activeAd) {
+        return null;
+    }
+
     if (isSidebar) {
         return (
             <div className={`w-[160px] h-[600px] flex-shrink-0 bg-slate-900/50 backdrop-blur-md border border-white/10 rounded-2xl flex flex-col items-center justify-center p-4 text-center ${className}`}>
@@ -208,6 +218,11 @@ const ScriptAd = ({ script, className, isSidebar }: { script: string, className:
     const containerRef = React.useRef<HTMLDivElement>(null);
     const hasInjected = React.useRef(false);
 
+    // Check if it's an AdSense script
+    const isAdSense = React.useMemo(() => {
+        return /adsbygoogle/i.test(script) || /pagead2\.googlesyndication\.com/i.test(script);
+    }, [script]);
+
     React.useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
@@ -222,11 +237,50 @@ const ScriptAd = ({ script, className, isSidebar }: { script: string, className:
         return () => observer.disconnect();
     }, []);
 
+    // --- ADSENSE DIRECT INJECTION (SAFE MODE) ---
     React.useEffect(() => {
-        if (isVisible && iframeRef.current && script && !hasInjected.current) {
+        if (isVisible && isAdSense && containerRef.current && !hasInjected.current) {
+            hasInjected.current = true;
+            try {
+                // 1. Extract the <ins> tag attributes from the script string
+                //    AdSense scripts usually look like: <script>...</script> <ins ...></ins> <script>...</script>
+                //    We need to reconstruct the <ins> element safely in the DOM.
+
+                // Regex to find attributes in <ins> tag
+                const insMatch = script.match(/<ins([^>]+)><\/ins>/);
+                if (insMatch) {
+                    const insAttributes = insMatch[1];
+                    const insElement = document.createElement('ins');
+
+                    // Parse attributes (simple regex parser)
+                    const attrRegex = /(\w+)="([^"]+)"/g;
+                    let match;
+                    while ((match = attrRegex.exec(insAttributes)) !== null) {
+                        insElement.setAttribute(match[1], match[2]);
+                    }
+
+                    // Append <ins> to container
+                    containerRef.current.innerHTML = ''; // Clear container
+                    containerRef.current.appendChild(insElement);
+
+                    // Trigger AdSense
+                    // @ts-ignore
+                    (window.adsbygoogle = window.adsbygoogle || []).push({});
+                } else {
+                    console.error("AdSense <ins> tag not found in script:", script);
+                }
+            } catch (e) {
+                console.error("AdSense Injection Error:", e);
+            }
+        }
+    }, [isVisible, isAdSense, script]);
+
+    // --- IFRAME INJECTION (SANDBOX MODE FOR OTHER ADS) ---
+    React.useEffect(() => {
+        if (isVisible && !isAdSense && iframeRef.current && script && !hasInjected.current) {
             const doc = iframeRef.current.contentWindow?.document;
             if (doc) {
-                hasInjected.current = true; // Prevent double injection
+                hasInjected.current = true;
                 doc.open();
                 doc.write(`
                     <!DOCTYPE html>
@@ -246,7 +300,18 @@ const ScriptAd = ({ script, className, isSidebar }: { script: string, className:
                 doc.close();
             }
         }
-    }, [isVisible, script]);
+    }, [isVisible, isAdSense, script]);
+
+    if (isAdSense) {
+        return (
+            <div
+                ref={containerRef}
+                className={`relative overflow-hidden group mx-auto flex items-center justify-center ${isSidebar ? 'w-[160px] min-h-[600px]' : 'w-full min-h-[90px]'} ${className}`}
+            >
+                {/* AdSense will be injected here */}
+            </div>
+        );
+    }
 
     return (
         <div
