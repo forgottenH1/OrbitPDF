@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run validate:json && tsc && vite build",
+    "build": "npm run validate:json && npm run generate-sitemap && tsc && vite build",
     "preview": "vite preview",
     "validate:json": "node scripts/validate-json.cjs",
     "generate-sitemap": "node scripts/generate-sitemap.js",
