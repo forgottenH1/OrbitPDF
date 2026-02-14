@@ -1,29 +1,38 @@
 [
   {
     "id": "1770983144720",
-    "companyName": "Example Config",
-    "contactName": "Config",
-    "email": "contact@example.com",
+    "companyName": "Advertiser 1",
+    "contactName": "Contact 1",
+    "email": "advertiser1@example.com",
     "tier": "bronze",
-    "notes": "Placeholder data",
+    "notes": "Private notes hidden for public deployment.",
     "website": "https://example.com"
   },
   {
     "id": "1770990298608",
-    "companyName": "Example Advertiser 2",
+    "companyName": "Advertiser 2",
     "contactName": "Contact 2",
-    "email": "contact2@example.com",
+    "email": "advertiser2@example.com",
     "tier": "unassigned",
-    "notes": "Placeholder data",
+    "notes": "Private notes hidden for public deployment.",
     "website": "https://example.com"
   },
   {
     "id": "1770998030663",
-    "companyName": "Example Advertiser 3",
+    "companyName": "Advertiser 3",
     "contactName": "Contact 3",
-    "email": "contact3@example.com",
+    "email": "advertiser3@example.com",
     "tier": "silver-right",
-    "notes": "Placeholder data",
+    "notes": "Private notes hidden for public deployment.",
+    "website": "https://example.com"
+  },
+  {
+    "id": "1771081650401",
+    "companyName": "Advertiser 4",
+    "contactName": "Contact 4",
+    "email": "advertiser4@example.com",
+    "tier": "silver-right",
+    "notes": "Private notes hidden for public deployment.",
     "website": "https://example.com"
   }
 ]
