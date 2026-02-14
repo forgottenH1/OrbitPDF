@@ -502,16 +502,16 @@ export default function CampaignWizard({ onClose, onSuccess, advertisers, campai
                                     {/* 1. Desktop Image (Always required) */}
                                     <div>
                                         <label className="block text-sm font-medium text-slate-400 mb-2">
-                                            {campaign.placement === 'header-footer-combo' ? 'Header Image (Desktop) *' :
-                                                campaign.placement === 'footer' ? 'Footer Image (Desktop) *' :
-                                                    'Ad Image (Desktop) *'}
+                                            {campaign.placement === 'header-footer-combo' ? 'Header Asset (Desktop) *' :
+                                                campaign.placement === 'footer' ? 'Footer Asset (Desktop) *' :
+                                                    'Ad Asset (Desktop) *'}
                                         </label>
                                         <select
                                             value={campaign.imageUrl || ''}
                                             onChange={e => setCampaign({ ...campaign, imageUrl: e.target.value })}
                                             className="w-full bg-slate-800 border border-slate-600 rounded-lg p-2.5 text-white mb-2"
                                         >
-                                            <option value="">-- Select Valid Image --</option>
+                                            <option value="">-- Select Asset --</option>
                                             {availableImages
                                                 .filter(img => {
                                                     if (campaign.placement === 'header-footer-combo') return img.placement === 'header';
@@ -533,14 +533,14 @@ export default function CampaignWizard({ onClose, onSuccess, advertisers, campai
                                     {['header', 'footer', 'header-footer-combo'].includes(campaign.placement || '') && (
                                         <div>
                                             <label className="block text-sm font-medium text-slate-400 mb-2">
-                                                {campaign.placement === 'footer' ? 'Footer Image (Mobile) *' : 'Header Image (Mobile) *'}
+                                                {campaign.placement === 'footer' ? 'Footer Asset (Mobile) *' : 'Header Asset (Mobile) *'}
                                             </label>
                                             <select
                                                 value={campaign.mobileImageUrl || ''}
                                                 onChange={e => setCampaign({ ...campaign, mobileImageUrl: e.target.value })}
                                                 className="w-full bg-slate-800 border border-slate-600 rounded-lg p-2.5 text-white mb-2"
                                             >
-                                                <option value="">-- Select Valid Image --</option>
+                                                <option value="">-- Select Asset --</option>
                                                 {availableImages
                                                     .filter(img => {
                                                         if (campaign.placement === 'header-footer-combo') return img.placement === 'header'; // Use header assets for mobile header
@@ -566,13 +566,13 @@ export default function CampaignWizard({ onClose, onSuccess, advertisers, campai
 
                                             {/* 3. Footer Desktop */}
                                             <div>
-                                                <label className="block text-sm font-medium text-slate-400 mb-2">Footer Image (Desktop) *</label>
+                                                <label className="block text-sm font-medium text-slate-400 mb-2">Footer Asset (Desktop) *</label>
                                                 <select
                                                     value={campaign.footerImageUrl || ''}
                                                     onChange={e => setCampaign({ ...campaign, footerImageUrl: e.target.value })}
                                                     className="w-full bg-slate-800 border border-slate-600 rounded-lg p-2.5 text-white mb-2"
                                                 >
-                                                    <option value="">-- Select Valid Image --</option>
+                                                    <option value="">-- Select Asset --</option>
                                                     {availableImages
                                                         .filter(img => img.placement === 'footer')
                                                         .map((img, idx) => (
@@ -589,13 +589,13 @@ export default function CampaignWizard({ onClose, onSuccess, advertisers, campai
 
                                             {/* 4. Footer Mobile */}
                                             <div>
-                                                <label className="block text-sm font-medium text-slate-400 mb-2">Footer Image (Mobile) *</label>
+                                                <label className="block text-sm font-medium text-slate-400 mb-2">Footer Asset (Mobile) *</label>
                                                 <select
                                                     value={campaign.footerMobileImageUrl || ''}
                                                     onChange={e => setCampaign({ ...campaign, footerMobileImageUrl: e.target.value })}
                                                     className="w-full bg-slate-800 border border-slate-600 rounded-lg p-2.5 text-white mb-2"
                                                 >
-                                                    <option value="">-- Select Valid Image --</option>
+                                                    <option value="">-- Select Asset --</option>
                                                     {availableImages
                                                         .filter(img => img.placement === 'footer')
                                                         .map((img, idx) => (
