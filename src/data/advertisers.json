@@ -1,47 +1,47 @@
 [
   {
     "id": "1770983144720",
-    "companyName": "no",
-    "contactName": "youb raby",
-    "email": "gtgogeta@gmail.com",
+    "companyName": "Advertiser 1",
+    "contactName": "Contact 1",
+    "email": "advertiser1@example.com",
     "tier": "bronze",
-    "notes": "",
-    "website": ""
+    "notes": "Private notes hidden for public deployment.",
+    "website": "https://example.com"
   },
   {
     "id": "1770990298608",
-    "companyName": "Adsterra ADS",
-    "contactName": "Adsterra ",
-    "email": "Adsterra",
+    "companyName": "Advertiser 2",
+    "contactName": "Contact 2",
+    "email": "advertiser2@example.com",
     "tier": "unassigned",
-    "notes": "",
-    "website": ""
+    "notes": "Private notes hidden for public deployment.",
+    "website": "https://example.com"
   },
   {
     "id": "1770998030663",
-    "companyName": "adil company",
-    "contactName": "adil lotfi",
-    "email": "gtgogeta@gmail.com",
+    "companyName": "Advertiser 3",
+    "contactName": "Contact 3",
+    "email": "advertiser3@example.com",
     "tier": "silver-right",
-    "notes": "",
-    "website": ""
+    "notes": "Private notes hidden for public deployment.",
+    "website": "https://example.com"
   },
   {
     "id": "1771081650401",
-    "companyName": "Charika jdida",
-    "contactName": "modir charika",
-    "email": "gtgogeta@gmail.com",
+    "companyName": "Advertiser 4",
+    "contactName": "Contact 4",
+    "email": "advertiser4@example.com",
     "tier": "silver-right",
-    "notes": "",
-    "website": ""
+    "notes": "Private notes hidden for public deployment.",
+    "website": "https://example.com"
   },
   {
     "id": "1771083189846",
-    "companyName": "Societe 9dima",
-    "contactName": "mol societe",
-    "email": "gtgogeta@gmail.com",
+    "companyName": "Advertiser 5",
+    "contactName": "Contact 5",
+    "email": "advertiser5@example.com",
     "tier": "silver-left",
-    "notes": "",
-    "website": ""
+    "notes": "Private notes hidden for public deployment.",
+    "website": "https://example.com"
   }
 ]

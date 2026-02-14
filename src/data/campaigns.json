@@ -73,5 +73,17 @@
     "id": "1771084060559",
     "advertiserId": "1770998030663",
     "tier": "silver-left"
+  },
+  {
+    "status": "active",
+    "placement": "sidebar-right",
+    "startDate": "2026-02-14",
+    "clicks": 0,
+    "endDate": "2026-02-28",
+    "imageUrl": "/ads/desktop/sidebar/sidebar-right/silver_right.png",
+    "link": "https://orbitpdf.pages.dev/advertise.html",
+    "id": "1771108821214",
+    "advertiserId": "1771081650401",
+    "tier": "silver-right"
   }
 ]
