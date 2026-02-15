@@ -166,7 +166,7 @@
     "guidesData": {
         "merge": {
             "title": "如何将多个 PDF 合并为一个主文件",
-            "category": "Organize",
+            "category": "组织",
             "intro": "将单独的报告、合同或项目文件合并为一个整理好的 PDF 文档。非常适合简化工作流程和共享统一文档。",
             "steps": [
                 "点击主菜单中的 **PDF 合并工具**。",
@@ -177,7 +177,7 @@
         },
         "split": {
             "title": "如何分割 PDF 页面或提取范围",
-            "category": "Organize",
+            "category": "组织",
             "intro": "从大型文档中提取特定页面（如发票或章节），或将整个 PDF 分割成单独的文件。",
             "steps": [
                 "选择 **PDF 页面分割器** 工具。",
@@ -188,7 +188,7 @@
         },
         "compress": {
             "title": "如何压缩 PDF 用于电子邮件和网络",
-            "category": "Optimize",
+            "category": "优化",
             "intro": "大幅减小 PDF 文件大小而不影响可读性。非常适合电子邮件附件和更快的网页加载。",
             "steps": [
                 "打开 **PDF 超级压缩** 工具。",
@@ -199,7 +199,7 @@
         },
         "word-to-pdf": {
             "title": "如何将 Word (Docx) 转换为专业 PDF",
-            "category": "Convert",
+            "category": "转换",
             "intro": "将可编辑的 Word 文档转换为安全、专业的 PDF，在任何设备上看起来都一样。",
             "steps": [
                 "选择 **Docx 转 PDF 专业版**。",
@@ -210,7 +210,7 @@
         },
         "pdf-to-word": {
             "title": "如何将 PDF 转换为可编辑的 Word 文档",
-            "category": "Convert",
+            "category": "转换",
             "intro": "将静态 PDF 转回可编辑的 Word 文档，以快速进行文本更新或重新利用内容。",
             "steps": [
                 "从工具列表中选择 **PDF 转 Word 文档**。",
@@ -221,7 +221,7 @@
         },
         "pdf-to-excel": {
             "title": "如何从 PDF 提取表格到 Excel",
-            "category": "Convert",
+            "category": "转换",
             "intro": "无需重新输入数据！立即将 PDF 表格转换为可编辑的 Excel 电子表格进行分析。",
             "steps": [
                 "打开 **PDF 表格提取器**。",
@@ -232,7 +232,7 @@
         },
         "pdf-to-img": {
             "title": "如何将 PDF 页面保存为高清图片",
-            "category": "Convert",
+            "category": "转换",
             "intro": "将特定 PDF 页面转换为高质量的 JPG 图片，以便于在社交媒体或演示文稿中分享。",
             "steps": [
                 "选择 **PDF 转图片 (HD)** 工具。",
@@ -243,7 +243,7 @@
         },
         "pdf-to-png": {
             "title": "如何将 PDF 转换为无损 PNG",
-            "category": "Convert",
+            "category": "转换",
             "intro": "将页面提取为清晰、无背景的 PNG 文件。非常适合需要无损质量的平面设计师。",
             "steps": [
                 "前往 **PDF 转 PNG (无损)**。",
@@ -254,7 +254,7 @@
         },
         "img-to-pdf": {
             "title": "如何将图片合并为 PDF 作品集",
-            "category": "Convert",
+            "category": "转换",
             "intro": "将照片、扫描件或图表合并为一个干净的 PDF 文档，用于专业演示。",
             "steps": [
                 "打开 **图片转 PDF**。",
@@ -265,7 +265,7 @@
         },
         "ocr": {
             "title": "如何使扫描的 PDF 可搜索 (OCR)",
-            "category": "Convert",
+            "category": "转换",
             "intro": "解锁扫描文档中的文本。使用 OCR 制作可选择、可搜索和可复制的文本。",
             "steps": [
                 "选择 **PDF 文本识别**。",
@@ -276,7 +276,7 @@
         },
         "rotate": {
             "title": "如何修复 PDF 页面方向",
-            "category": "Organize",
+            "category": "组织",
             "intro": "永久旋转倒置或侧向的 PDF 页面，以确保正确阅读。",
             "steps": [
                 "选择 **PDF 页面旋转器**。",
@@ -287,7 +287,7 @@
         },
         "page-number": {
             "title": "如何为 PDF 添加页码",
-            "category": "Edit",
+            "category": "编辑",
             "intro": "添加专业的页码（页眉或页脚）以整理长合同或论文文档。",
             "steps": [
                 "打开 **PDF 页码**。",
@@ -298,7 +298,7 @@
         },
         "sign": {
             "title": "如何电子签署 PDF 文档",
-            "category": "Edit",
+            "category": "编辑",
             "intro": "绘制您的数字签名并将其放置在合同或表格上，无需打印。",
             "steps": [
                 "前往 **PDF 电子签名**。",
@@ -309,7 +309,7 @@
         },
         "organize": {
             "title": "如何重新排序和删除 PDF 页面",
-            "category": "Organize",
+            "category": "组织",
             "intro": "掌控您的 PDF 结构。在几秒钟内直观地重新排列、删除或整理页面。",
             "steps": [
                 "选择 **PDF 页面整理器**。",
@@ -320,7 +320,7 @@
         },
         "watermark": {
             "title": "如何为 PDF 添加水印以进行品牌推广和安全保护",
-            "category": "Edit",
+            "category": "编辑",
             "intro": "通过在页面上印章 logo 或 \"机密\" 文本来保护您的知识产权。",
             "steps": [
                 "选择 **PDF 品牌印章**。",
@@ -331,7 +331,7 @@
         },
         "edit-metadata": {
             "title": "如何编辑 PDF 标题、作者和内容",
-            "category": "Edit",
+            "category": "编辑",
             "intro": "更新隐藏的 PDF 属性（元数据），如作者和标题，以改善文件整理和 SEO。",
             "steps": [
                 "打开 **PDF 元数据编辑器**。",
@@ -342,7 +342,7 @@
         },
         "flatten": {
             "title": "如何扁平化 PDF 表单和注释",
-            "category": "Organize",
+            "category": "组织",
             "intro": "锁定可填写表单和注释，使内容无法被他人编辑。",
             "steps": [
                 "选择 **PDF 扁平化工具**。",
@@ -353,7 +353,7 @@
         },
         "trim": {
             "title": "如何裁剪 PDF 边距",
-            "category": "Organize",
+            "category": "组织",
             "intro": "移除多余的空白或裁剪可见区域以优化打印布局。",
             "steps": [
                 "前往 **PDF 智能裁剪**。",
@@ -364,7 +364,7 @@
         },
         "compare": {
             "title": "如何直观地比较两个 PDF",
-            "category": "Organize",
+            "category": "组织",
             "intro": "并排发现两个版本文档之间的差异。",
             "steps": [
                 "选择 **PDF 视觉差异**。",
@@ -375,7 +375,7 @@
         },
         "protect": {
             "title": "如何用密码保护 PDF",
-            "category": "Security",
+            "category": "安全",
             "intro": "使用军用级 AES 加密和唯一密码保护敏感文档。",
             "steps": [
                 "打开 **PDF 安全保险箱**。",
@@ -386,7 +386,7 @@
         },
         "unlock": {
             "title": "如何解锁受密码保护的 PDF",
-            "category": "Security",
+            "category": "安全",
             "intro": "从 PDF 中移除已知密码，使其更易于访问和共享。",
             "steps": [
                 "选择 **PDF 密码移除器**。",
@@ -397,7 +397,7 @@
         },
         "repair": {
             "title": "如何修复损坏的 PDF 文件",
-            "category": "Organize",
+            "category": "组织",
             "intro": "尝试从损坏或无法打开的 PDF 文件中恢复数据。",
             "steps": [
                 "选择 **PDF 文件修复**。",
@@ -408,7 +408,7 @@
         },
         "grayscale": {
             "title": "如何将 PDF 转换为灰度",
-            "category": "Optimize",
+            "category": "优化",
             "intro": "移除 PDF 中的所有颜色，以用于廉价的黑白打印或存档。",
             "steps": [
                 "选择 **PDF 灰度转换器**。",
@@ -419,7 +419,7 @@
         },
         "invert-colors": {
             "title": "如何反转 PDF 颜色（夜间模式）",
-            "category": "Optimize",
+            "category": "优化",
             "intro": "将白色背景切换为黑色，以便在低光环境下舒适阅读。",
             "steps": [
                 "打开 **PDF 夜间模式**。",
@@ -430,7 +430,7 @@
         },
         "extract-text": {
             "title": "如何从 PDF 抓取文本",
-            "category": "Convert",
+            "category": "转换",
             "intro": "将原本 PDF 内容提取为简单的文本文件，以便复制或编码。",
             "steps": [
                 "前往 **PDF 文本抓取器**。",
@@ -441,7 +441,7 @@
         },
         "remove-annotations": {
             "title": "如何从 PDF 中移除注释",
-            "category": "Edit",
+            "category": "编辑",
             "intro": "通过剔除所有用户评论、高亮和标记来清理文档。",
             "steps": [
                 "选择 **清理 PDF 标记**。",
@@ -452,7 +452,7 @@
         },
         "redact": {
             "title": "如何永久涂掉 PDF 文本",
-            "category": "Security",
+            "category": "安全",
             "intro": "安全地涂黑敏感信息（如社保号或姓名），使其无法恢复。",
             "steps": [
                 "打开 **PDF 安全涂黑**。",
@@ -463,7 +463,7 @@
         },
         "pdf-to-ppt": {
             "title": "如何将 PDF 转换为 PowerPoint 幻灯片",
-            "category": "Convert",
+            "category": "转换",
             "intro": "将您的 PDF 演示文稿转回为可编辑的 PowerPoint 幻灯片。",
             "steps": [
                 "选择 **PDF 转 PowerPoint**。",
@@ -474,7 +474,7 @@
         },
         "excel-to-pdf": {
             "title": "如何将 Excel 表格转换为 PDF",
-            "category": "Convert",
+            "category": "转换",
             "intro": "通过将电子表格转换为不可编辑的标准 PDF 来安全地共享它们。",
             "steps": [
                 "选择 **Excel 转 PDF 转换器**。",
@@ -485,7 +485,7 @@
         },
         "ppt-to-pdf": {
             "title": "如何将 PowerPoint 保存为 PDF",
-            "category": "Convert",
+            "category": "转换",
             "intro": "通过将演示文稿保存为 PDF，确保其在任何屏幕上看起来都很完美。",
             "steps": [
                 "打开 **PowerPoint 转 PDF**。",
@@ -496,7 +496,7 @@
         },
         "html-to-pdf": {
             "title": "如何将网页保存为 PDF",
-            "category": "Convert",
+            "category": "转换",
             "intro": "将文章、收据或网站捕获为干净、可离线阅读的 PDF 文档。",
             "steps": [
                 "选择 **网页转 PDF 捕获**。",
@@ -780,5 +780,13 @@
         "message": "请帮助保持 OrbitPDF 免费。我们需要广告收入来维持服务器运行并确保工具对所有人开放。请考虑关闭广告拦截器以支持我们。",
         "button": "已关闭，刷新页面",
         "dismiss": "继续而不关闭"
+    },
+    "cookie": {
+        "title": "我们重视您的隐私",
+        "description": "我们使用 Cookie 来增强您的体验、提供个性化广告并分析我们的流量。点击“全部接受”即表示您同意我们要使用 Cookie。",
+        "googleNotice": "Google 使用 Cookie 来个性化广告和分析流量。",
+        "learnMoreGoogle": "Google 如何利用从由于您使用我们的合作伙伴的网站或应用而产生的数据",
+        "accept": "全部接受",
+        "decline": "拒绝"
     }
 }

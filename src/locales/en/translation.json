@@ -33,7 +33,7 @@
         "Security": "Security"
     },
     "legal": {
-        "privacyContent": "<p><strong>Last Updated: October 2023</strong></p><p>At OrbitPDF, we prioritize your privacy. Since our tools run entirely in your browser (client-side), your files <strong>never leave your device</strong>. We do not upload, store, or process your documents on any server.</p><h3 class='text-xl font-bold text-white mt-4'>1. Data Collection</h3><p>We do not collect personal data or file content. We may use anonymous analytics (like Google Analytics) to improve site performance.</p><h3 class='text-xl font-bold text-white mt-4'>2. Cookies</h3><p>We use local storage to save your preferences (e.g., dark mode). Third-party vendors may use cookies to serve ads based on visits.</p>",
+        "privacyContent": "<p><strong>Last Updated: October 2023</strong></p><p>At OrbitPDF, we prioritize your privacy. Since our tools run entirely in your browser (client-side), your files <strong>never leave your device</strong>. We do not upload, store, or process your documents on any server.</p><h3 class='text-xl font-bold text-white mt-4'>1. Data Collection</h3><p>We do not collect personal data or file content. We may use anonymous analytics (like Google Analytics) to improve site performance.</p><h3 class='text-xl font-bold text-white mt-4'>2. Cookies & Advertising</h3><p>We use local storage to save your preferences (e.g., dark mode). Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to your website or other websites.</p><p class='mt-2'>Google's use of advertising cookies enables it and its partners to serve ads to your users based on their visit to your sites and/or other sites on the Internet.</p><p class='mt-2'><a href='https://policies.google.com/technologies/partner-sites' target='_blank' rel='noopener noreferrer' class='text-blue-400 hover:underline'>How Google uses data when you use our partners' sites or apps</a>.</p>",
         "termsContent": "<p><strong>Last Updated: October 2023</strong></p><p>By using OrbitPDF, you agree to these terms. Our tools are provided \"as is\" without warranty of any kind.</p><h3 class='text-xl font-bold text-white mt-4'>1. Usage</h3><p>You may use our tools for personal or commercial purposes. You are responsible for the content you process.</p><h3 class='text-xl font-bold text-white mt-4'>2. Limitations</h3><p>We are not liable for any data loss or damages resulting from the use of our tools. Always keep backups of your original files.</p>",
         "adTermsTitle": "Advertising Agreement & Terms of Service",
         "adTermsContent": "<div class='space-y-4 text-slate-300'><p><strong>Advertising Agreement & Terms of Service</strong></p><p>By submitting this inquiry and proceeding with an advertising campaign on OrbitPDF (Service), you (Advertiser) agree to the following legally binding terms and conditions:</p><h3 class='text-white font-bold mt-4'>1. Prohibited Content</h3><p>OrbitPDF maintains a strict zero-tolerance policy regarding the content of advertisements. The Advertiser warrants that their ad creatives and landing pages DO NOT contain, promote, or link to:</p><ul class='list-disc pl-5 space-y-1'><li><strong>Illegal Activities:</strong> Any content that violates applicable local, national, or international laws.</li><li><strong>Adult Content:</strong> Pornography, nudity, or sexually explicit material of any kind.</li><li><strong>Violence & Hate Speech:</strong> Graphic violence, self-harm, harassment, or hate speech against any group or individual.</li><li><strong>Political or Religious Agendas:</strong> Content promoting specific political parties, candidates, religious organizations, or controversial ideological agendas.</li><li><strong>Terrorism & Extremism:</strong> Content supporting or promoting terrorist organizations, violent extremism, or radicalization.</li><li><strong>Drugs & Controlled Substances:</strong> The sale, use, or promotion of illegal drugs, prescription medications without proper authorization, or drug paraphernalia.</li><li><strong>Suspected or Illegal Products:</strong> Counterfeit goods, weapons, hacking tools, or any product suspected of being illegal or fraudulent.</li></ul><h3 class='text-white font-bold mt-4'>2. International Compliance</h3><p>OrbitPDF operates globally and respects international laws and agreements. The Advertiser agrees to comply with all applicable laws and regulations in the jurisdictions where their ads are displayed, including but not limited to GDPR (General Data Protection Regulation) and CCPA (California Consumer Privacy Act). We reserve the right to reject or remove any campaign that we believe violates international legal standards or sanctions.</p><h3 class='text-white font-bold mt-4'>3. Right to Refuse</h3><p>OrbitPDF reserves the right to reject, pause, or cancel any advertising campaign at its sole discretion, without prior notice, if it is deemed inappropriate, offensive, or in violation of this agreement. In such cases, a prorated refund may be issued at our discretion, unless the account is terminated due to a violation of the Prohibited Content policy.</p><h3 class='text-white font-bold mt-4'>4. Liability</h3><p>The Advertiser assumes full responsibility for their ad content and agrees to indemnify and hold OrbitPDF harmless from any claims, damages, or legal actions arising from their advertising materials.</p></div>"
@@ -109,6 +109,14 @@
         "message": "Keep OrbitPDF free. We use a few ads to power our servers and keep our tools accessible to everyone. Please consider whitelisting us to support our mission.",
         "button": "I've Disabled It, Refresh",
         "dismiss": "Continue without disabling"
+    },
+    "cookie": {
+        "title": "We value your privacy",
+        "description": "We use cookies to enhance your experience, serve personalized ads, and analyze our traffic. By clicking \"Accept All\", you consent to our use of cookies.",
+        "googleNotice": "Google uses cookies to personalize ads and analyze traffic.",
+        "learnMoreGoogle": "How Google uses data when you use our partners' sites or apps",
+        "accept": "Accept All",
+        "decline": "Decline"
     },
     "pricing": {
         "title": "Ad Pricing",
@@ -285,7 +293,10 @@
             "category": "Organize",
             "intro": "Permanently rotate PDF pages that are upside down or sideways to ensure proper readability.",
             "steps": [
-                "Choose **PDF Page Rotator**.',\n            'Upload the file with incorrect orientation.',\n            'Select **90°**, **180°**, or **270°** rotation.',\n            'Click **Rotate** to save the corrected file."
+                "Choose **PDF Page Rotator**.",
+                "Upload the file with incorrect orientation.",
+                "Select **90°**, **180°**, or **270°** rotation.",
+                "Click **Rotate** to save the corrected file."
             ]
         },
         "page-number": {
@@ -348,7 +359,10 @@
             "category": "Organize",
             "intro": "Lock fillable forms and annotations so the content can no longer be edited by others.",
             "steps": [
-                "Select **PDF Flattener Tool**.',\n            'Upload your interactive PDF or form.',\n            'Click **Flatten PDF**.',\n            'The output will have all content merged into the base layer."
+                "Select **PDF Flattener Tool**.",
+                "Upload your interactive PDF or form.",
+                "Click **Flatten PDF**.",
+                "The output will have all content merged into the base layer."
             ]
         },
         "trim": {
@@ -411,7 +425,10 @@
             "category": "Optimize",
             "intro": "Remove all color from a PDF for cheaper black-and-white printing or archival.",
             "steps": [
-                "Select **PDF Grayscale Converter**.',\n            'Upload your color PDF.',\n            'Click **Convert**.',\n            'Download the high-contrast black and white version."
+                "Select **PDF Grayscale Converter**.",
+                "Upload your color PDF.",
+                "Click **Convert**.",
+                "Download the high-contrast black and white version."
             ]
         },
         "invert-colors": {
@@ -430,7 +447,10 @@
             "category": "Convert",
             "intro": "Pull raw text content out of a PDF into a simple text file for copying or coding.",
             "steps": [
-                "Go to **PDF Text Scraper**.',\n            'Upload your PDF.',\n            'The tool extracts all legible text streams.',\n            'Download the result as a **.txt** file."
+                "Go to **PDF Text Scraper**.",
+                "Upload your PDF.",
+                "The tool extracts all legible text streams.",
+                "Download the result as a **.txt** file."
             ]
         },
         "remove-annotations": {
@@ -471,7 +491,10 @@
             "category": "Convert",
             "intro": "Share spreadsheets securely by converting them into uneditable, standardized PDFs.",
             "steps": [
-                "Determine **Excel to PDF Converter**.',\n            'Upload your .xlsx or .xls file.',\n            'The tool fits your sheets to PDF pages.',\n            'Download the professional report."
+                "Determine **Excel to PDF Converter**.",
+                "Upload your .xlsx or .xls file.",
+                "The tool fits your sheets to PDF pages.",
+                "Download the professional report."
             ]
         },
         "ppt-to-pdf": {

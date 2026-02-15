@@ -166,7 +166,7 @@
     "guidesData": {
         "merge": {
             "title": "Como Juntar Vários PDFs em Um Arquivo",
-            "category": "Organize",
+            "category": "Organizar",
             "intro": "Combine relatórios, contratos ou arquivos de projeto separados em um único documento PDF organizado.",
             "steps": [
                 "Clique na ferramenta **Juntar PDF** no menu principal.",
@@ -177,7 +177,7 @@
         },
         "split": {
             "title": "Como Dividir Páginas de PDF ou Extrair Intervalos",
-            "category": "Organize",
+            "category": "Organizar",
             "intro": "Extraia páginas específicas (como uma fatura ou capítulo) de um documento grande ou divida um PDF inteiro em arquivos separados.",
             "steps": [
                 "Selecione a ferramenta **Dividir PDF**.",
@@ -188,7 +188,7 @@
         },
         "compress": {
             "title": "Como Comprimir PDF para E-mail e Web",
-            "category": "Optimize",
+            "category": "Otimizar",
             "intro": "Reduza drasticamente o tamanho do arquivo PDF sem perder legibilidade. Perfeito para anexos de e-mail.",
             "steps": [
                 "Abra a ferramenta **Comprimir PDF**.",
@@ -199,7 +199,7 @@
         },
         "word-to-pdf": {
             "title": "Como Converter Word (Docx) para PDF Profissional",
-            "category": "Convert",
+            "category": "Converter",
             "intro": "Transforme documentos Word editáveis em PDFs seguros e profissionais que parecem iguais em qualquer dispositivo.",
             "steps": [
                 "Selecione **Docx para PDF**.",
@@ -210,7 +210,7 @@
         },
         "pdf-to-word": {
             "title": "Como Converter PDF para Documento Word Editável",
-            "category": "Convert",
+            "category": "Converter",
             "intro": "Transforme PDFs estáticos de volta em documentos Word editáveis para alterações rápidas de texto.",
             "steps": [
                 "Escolha **PDF para Word** na lista.",
@@ -221,7 +221,7 @@
         },
         "pdf-to-excel": {
             "title": "Como Extrair Tabelas de PDF para Excel",
-            "category": "Convert",
+            "category": "Converter",
             "intro": "Chega de redigitar manualmente! Converta tabelas de PDF instantaneamente em planilhas Excel editáveis.",
             "steps": [
                 "Abra **PDF para Excel**.",
@@ -232,7 +232,7 @@
         },
         "pdf-to-img": {
             "title": "Como Salvar Páginas de PDF como Imagens HD",
-            "category": "Convert",
+            "category": "Converter",
             "intro": "Converta páginas específicas de PDF em imagens JPG de alta qualidade para compartilhar facilmente.",
             "steps": [
                 "Selecione a ferramenta **PDF para Imagem (HD)**.",
@@ -243,7 +243,7 @@
         },
         "pdf-to-png": {
             "title": "Como Converter PDF para PNG Sem Perdas",
-            "category": "Convert",
+            "category": "Converter",
             "intro": "Extraia páginas como arquivos PNG nítidos e com fundo transparente. Ideal para designers gráficos.",
             "steps": [
                 "Vá para **PDF para PNG (Sem Perdas)**.",
@@ -254,7 +254,7 @@
         },
         "img-to-pdf": {
             "title": "Como Juntar Imagens em um Portfólio PDF",
-            "category": "Convert",
+            "category": "Converter",
             "intro": "Compile fotos, digitalizações ou gráficos em um documento PDF limpo.",
             "steps": [
                 "Abra **Imagem para PDF**.",
@@ -265,7 +265,7 @@
         },
         "ocr": {
             "title": "Como Tornar PDF Digitalizado Pesquisável (OCR)",
-            "category": "Convert",
+            "category": "Converter",
             "intro": "Torne o texto em documentos digitalizados utilizável. Use OCR para tornar o texto selecionável e pesquisável.",
             "steps": [
                 "Selecione **Reconhecimento de Texto (OCR)**.",
@@ -276,7 +276,7 @@
         },
         "rotate": {
             "title": "Como Corrigir Orientação de Página PDF",
-            "category": "Organize",
+            "category": "Organizar",
             "intro": "Gire páginas de PDF permanentemente para que fiquem legíveis.",
             "steps": [
                 "Selecione **Girar PDF**.",
@@ -287,7 +287,7 @@
         },
         "page-number": {
             "title": "Como Adicionar Números de Página ao PDF",
-            "category": "Edit",
+            "category": "Editar",
             "intro": "Adicione numeração profissional (cabeçalho ou rodapé) para organizar documentos longos.",
             "steps": [
                 "Abra **Números de Página PDF**.",
@@ -298,7 +298,7 @@
         },
         "sign": {
             "title": "Como Assinar Eletronicamente um PDF",
-            "category": "Edit",
+            "category": "Editar",
             "intro": "Desenhe e posicione sua assinatura digital em contratos ou formulários sem precisar imprimir.",
             "steps": [
                 "Vá para **Assinar PDF**.",
@@ -309,7 +309,7 @@
         },
         "organize": {
             "title": "Como Reorganizar e Excluir Páginas de PDF",
-            "category": "Organize",
+            "category": "Organizar",
             "intro": "Assuma o controle da estrutura do seu PDF. Reorganize, exclua ou classifique páginas visualmente em segundos.",
             "steps": [
                 "Selecione **Organizar PDF**.",
@@ -320,7 +320,7 @@
         },
         "watermark": {
             "title": "Como Adicionar Marca d'água para Segurança",
-            "category": "Edit",
+            "category": "Editar",
             "intro": "Proteja sua propriedade intelectual estampando logotipos ou texto \"Confidencial\" nas páginas.",
             "steps": [
                 "Selecione **Marca d'água PDF**.",
@@ -331,7 +331,7 @@
         },
         "edit-metadata": {
             "title": "Como Editar Metadados de PDF (Autor, Título)",
-            "category": "Edit",
+            "category": "Editar",
             "intro": "Atualize propriedades ocultas do PDF como Autor e Título para melhor organização e SEO.",
             "steps": [
                 "Abra **Metadados PDF**.",
@@ -342,7 +342,7 @@
         },
         "flatten": {
             "title": "Como Achatar Formulários e Comentários em PDF",
-            "category": "Organize",
+            "category": "Organizar",
             "intro": "Bloqueie formulários preenchíveis e anotações para que o conteúdo não possa ser editado por outros.",
             "steps": [
                 "Selecione **Achatar PDF**.",
@@ -353,7 +353,7 @@
         },
         "trim": {
             "title": "Como Cortar Margens de PDF",
-            "category": "Organize",
+            "category": "Organizar",
             "intro": "Remova espaço em branco excessivo ou corte a área visível para ajustar o layout para impressão.",
             "steps": [
                 "Vá para **Cortar PDF**.",
@@ -364,7 +364,7 @@
         },
         "compare": {
             "title": "Como Comparar Dois PDFs Visualmente",
-            "category": "Organize",
+            "category": "Organizar",
             "intro": "Encontre diferenças entre duas versões de um documento lado a lado.",
             "steps": [
                 "Selecione **Comparar PDF**.",
@@ -375,7 +375,7 @@
         },
         "protect": {
             "title": "Como Proteger PDF com Senha",
-            "category": "Security",
+            "category": "Segurança",
             "intro": "Proteja documentos confidenciais com criptografia AES de nível militar e uma senha exclusiva.",
             "steps": [
                 "Abra **Proteger PDF**.",
@@ -386,7 +386,7 @@
         },
         "unlock": {
             "title": "Como Desbloquear PDF Protegido",
-            "category": "Security",
+            "category": "Segurança",
             "intro": "Remova senhas conhecidas de um PDF para facilitar o acesso e compartilhamento.",
             "steps": [
                 "Selecione **Desbloquear PDF**.",
@@ -397,7 +397,7 @@
         },
         "repair": {
             "title": "Como Reparar Arquivos PDF Corrompidos",
-            "category": "Organize",
+            "category": "Organizar",
             "intro": "Tente recuperar dados de arquivos PDF danificados ou que não abrem.",
             "steps": [
                 "Selecione **Reparar PDF**.",
@@ -408,7 +408,7 @@
         },
         "grayscale": {
             "title": "Como Converter PDF para Escala de Cinza",
-            "category": "Optimize",
+            "category": "Otimizar",
             "intro": "Remova todas as cores de um PDF para impressão econômica em preto e branco.",
             "steps": [
                 "Selecione **PDF para Escala de Cinza**.",
@@ -419,7 +419,7 @@
         },
         "invert-colors": {
             "title": "Como Inverter Cores de PDF (Modo Noturno)",
-            "category": "Optimize",
+            "category": "Otimizar",
             "intro": "Troque fundo branco por preto para leitura confortável em ambientes escuros.",
             "steps": [
                 "Abra **Modo Noturno PDF**.",
@@ -430,7 +430,7 @@
         },
         "extract-text": {
             "title": "Como Extrair Texto de um PDF",
-            "category": "Convert",
+            "category": "Converter",
             "intro": "Extraia conteúdo de texto bruto de um PDF para um arquivo de texto simples.",
             "steps": [
                 "Vá para **Extrator de Texto PDF**.",
@@ -441,7 +441,7 @@
         },
         "remove-annotations": {
             "title": "Como Remover Anotações de PDF",
-            "category": "Edit",
+            "category": "Editar",
             "intro": "Limpe um documento removendo todos os comentários, destaques e marcas de usuários.",
             "steps": [
                 "Selecione **Remover Marcações PDF**.",
@@ -452,7 +452,7 @@
         },
         "redact": {
             "title": "Como Ocultar Texto em PDF Permanentemente",
-            "category": "Security",
+            "category": "Segurança",
             "intro": "Cubra informações sensíveis (como números ou nomes) de forma segura para que não possam ser recuperadas.",
             "steps": [
                 "Abra **Ocultar Dados em PDF**.",
@@ -463,7 +463,7 @@
         },
         "pdf-to-ppt": {
             "title": "Como Converter PDF para Slides PowerPoint",
-            "category": "Convert",
+            "category": "Converter",
             "intro": "Transforme sua apresentação PDF de volta em slides PowerPoint editáveis.",
             "steps": [
                 "Selecione **PDF para PowerPoint**.",
@@ -474,7 +474,7 @@
         },
         "excel-to-pdf": {
             "title": "Como Converter Tabelas Excel para PDF",
-            "category": "Convert",
+            "category": "Converter",
             "intro": "Compartilhe planilhas com segurança transformando-as em PDFs padronizados não editáveis.",
             "steps": [
                 "Selecione **Excel para PDF**.",
@@ -485,7 +485,7 @@
         },
         "ppt-to-pdf": {
             "title": "Como Salvar PowerPoint como PDF",
-            "category": "Convert",
+            "category": "Converter",
             "intro": "Garanta que sua apresentação fique perfeita em qualquer tela salvando-a como PDF.",
             "steps": [
                 "Abra **PowerPoint para PDF**.",
@@ -496,7 +496,7 @@
         },
         "html-to-pdf": {
             "title": "Como Salvar Páginas Web como PDF",
-            "category": "Convert",
+            "category": "Converter",
             "intro": "Capture artigos, recibos ou sites como documentos PDF limpos para leitura offline.",
             "steps": [
                 "Selecione **Web para PDF**.",
@@ -780,5 +780,13 @@
         "message": "Mantenha o OrbitPDF gratuito. Usamos anúncios para manter nossos servidores e ferramentas acessíveis a todos. Considere desativar seu bloqueador de anúncios para nos apoiar.",
         "button": "Já Desativei, Atualizar",
         "dismiss": "Continuar sem desativar"
+    },
+    "cookie": {
+        "title": "Valorizamos a sua privacidade",
+        "description": "Utilizamos cookies para melhorar a sua experiência, apresentar anúncios personalizados e analisar o nosso tráfego. Ao clicar em \"Aceitar tudo\", concorda com a nossa utilização de cookies.",
+        "googleNotice": "A Google utiliza cookies para personalizar anúncios e analisar tráfego.",
+        "learnMoreGoogle": "Como a Google utiliza os dados quando utiliza sites ou aplicações dos nossos parceiros",
+        "accept": "Aceitar tudo",
+        "decline": "Recusar"
     }
 }

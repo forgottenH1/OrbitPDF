@@ -58,12 +58,12 @@ function generateSitemap() {
     let xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`;
 
-    // 1. Static Pages (Home, Contact, etc.)
+    // 1. Static Pages (Home, Contact, etc.) - Clean URLs
     const staticPages = [
         { path: '/', priority: '1.0' },
-        { path: '/contact.html', priority: '0.4' },
-        { path: '/advertise.html', priority: '0.6' },
-        { path: '/guides.html', priority: '0.7' } // Main guides hub
+        { path: '/contact', priority: '0.4' },
+        { path: '/advertise', priority: '0.6' },
+        { path: '/guides', priority: '0.7' } // Main guides hub
     ];
 
     // Helper to add URL entry
@@ -89,15 +89,15 @@ function generateSitemap() {
             addUrl(url, page.priority);
         });
 
-        // B. Tools
+        // B. Tools - Root level clean URLs
         toolIds.forEach(toolId => {
-            const url = `${BASE_URL}/?tool=${toolId}&${qs}`;
+            const url = `${BASE_URL}/${toolId}?${qs}`;
             addUrl(url, '0.8');
         });
 
-        // C. Guides
+        // C. Guides - Clean URLs under /guides/
         guideIds.forEach(guideId => {
-            const url = `${BASE_URL}/guides.html?id=${guideId}&${qs}`;
+            const url = `${BASE_URL}/guides/${guideId}?${qs}`;
             addUrl(url, '0.7');
         });
     });

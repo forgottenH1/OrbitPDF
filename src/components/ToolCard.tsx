@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router-dom';
+
 
 interface ToolCardProps {
     title: string;
@@ -15,13 +15,12 @@ interface ToolCardProps {
 
 const ToolCard: React.FC<ToolCardProps> = ({ title, description, icon: Icon, onClick, className = '', tag, toolId }) => {
     const { t } = useTranslation();
-    const navigate = useNavigate();
-
     const handleClick = () => {
         if (onClick) {
             onClick();
         } else if (toolId) {
-            navigate(`/?tool=${toolId}`);
+            // Force full page reload for ad impressions
+            window.location.href = `/${toolId}`;
         }
     };
 

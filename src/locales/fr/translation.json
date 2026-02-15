@@ -751,5 +751,13 @@
         "message": "Aidez-nous à garder OrbitPDF gratuit. Nous utilisons la publicité pour financer nos serveurs et rendre nos outils accessibles à tous. Veuillez envisager de désactiver votre bloqueur pour nous soutenir.",
         "button": "Je l'ai désactivé, rafraîchir",
         "dismiss": "Continuer sans désactiver"
+    },
+    "cookie": {
+        "title": "Nous tenons à votre vie privée",
+        "description": "Nous utilisons des cookies pour améliorer votre expérience, diffuser des publicités personnalisées et analyser notre trafic. En cliquant sur « Tout accepter », vous consentez à notre utilisation des cookies.",
+        "googleNotice": "Google utilise des cookies pour personnaliser les annonces et analyser le trafic.",
+        "learnMoreGoogle": "Comment Google utilise certaines données collectées lorsque vous utilisez des sites ou applications de nos partenaires",
+        "accept": "Tout accepter",
+        "decline": "Refuser"
     }
 }

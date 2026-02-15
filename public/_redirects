@@ -1,0 +1,12 @@
+# Cloudflare Pages Redirects
+# Handle SPA routing for Guides
+/guides/*  /guides.html  200
+
+# Handle SPA routing for Contact
+/contact/* /contact.html 200
+
+# Handle SPA routing for Advertise
+/advertise/* /advertise.html 200
+
+# Handle SPA routing for Main App (Tools) - Catch all
+/*  /index.html  200

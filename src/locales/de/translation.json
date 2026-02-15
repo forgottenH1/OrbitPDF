@@ -166,7 +166,7 @@
     "guidesData": {
         "merge": {
             "title": "So fügen Sie mehrere PDFs zu einer Datei zusammen",
-            "category": "Organize",
+            "category": "Organisieren",
             "intro": "Kombinieren Sie separate Berichte, Verträge oder Projektdateien in einem einzigen, organisierten PDF-Dokument.",
             "steps": [
                 "Klicken Sie im Hauptmenü auf das **PDF Zusammenführen** Tool.",
@@ -177,7 +177,7 @@
         },
         "split": {
             "title": "So teilen Sie PDF-Seiten oder extrahieren Bereiche",
-            "category": "Organize",
+            "category": "Organisieren",
             "intro": "Extrahieren Sie bestimmte Seiten (wie Rechnungen oder Kapitel) aus einem großen Dokument oder teilen Sie ein ganzes PDF in einzelne Dateien auf.",
             "steps": [
                 "Wählen Sie das **PDF Teilen** Tool.",
@@ -188,7 +188,7 @@
         },
         "compress": {
             "title": "So komprimieren Sie PDFs für E-Mail und Web",
-            "category": "Optimize",
+            "category": "Optimieren",
             "intro": "Reduzieren Sie die Dateigröße Ihrer PDFs drastisch, ohne die Lesbarkeit zu beeinträchtigen. Perfekt für E-Mail-Anhänge.",
             "steps": [
                 "Öffnen Sie das **PDF Komprimieren** Tool.",
@@ -199,7 +199,7 @@
         },
         "word-to-pdf": {
             "title": "So konvertieren Sie Word (Docx) in professionelle PDFs",
-            "category": "Convert",
+            "category": "Konvertieren",
             "intro": "Wandeln Sie bearbeitbare Word-Dokumente in sichere, professionelle PDFs um, die auf jedem Gerät gleich aussehen.",
             "steps": [
                 "Wählen Sie **Docx zu PDF**.",
@@ -210,7 +210,7 @@
         },
         "pdf-to-word": {
             "title": "So konvertieren Sie PDFs in bearbeitbare Word-Dokumente",
-            "category": "Convert",
+            "category": "Konvertieren",
             "intro": "Verwandeln Sie statische PDFs zurück in bearbeitbare Word-Dokumente, um Text schnell zu ändern oder Inhalte wiederzuverwenden.",
             "steps": [
                 "Wählen Sie **PDF zu Word** aus der Liste.",
@@ -221,7 +221,7 @@
         },
         "pdf-to-excel": {
             "title": "So extrahieren Sie Tabellen aus PDFs nach Excel",
-            "category": "Convert",
+            "category": "Konvertieren",
             "intro": "Kein manuelles Abtippen mehr! Konvertieren Sie PDF-Tabellen sofort in bearbeitbare Excel-Tabellen.",
             "steps": [
                 "Öffnen Sie **PDF zu Excel**.",
@@ -232,7 +232,7 @@
         },
         "pdf-to-img": {
             "title": "So speichern Sie PDF-Seiten als HD-Bilder",
-            "category": "Convert",
+            "category": "Konvertieren",
             "intro": "Konvertieren Sie bestimmte PDF-Seiten in hochwertige JPG-Bilder zum einfachen Teilen in sozialen Medien oder Präsentationen.",
             "steps": [
                 "Wählen Sie das **PDF zu Bild (HD)** Tool.",
@@ -243,7 +243,7 @@
         },
         "pdf-to-png": {
             "title": "So konvertieren Sie PDFs in verlustfreie PNGs",
-            "category": "Convert",
+            "category": "Konvertieren",
             "intro": "Extrahieren Sie Seiten als scharfe, hintergrundfreie PNG-Dateien. Ideal für Grafikdesigner.",
             "steps": [
                 "Gehen Sie zu **PDF zu PNG (Verlustfrei)**.",
@@ -254,7 +254,7 @@
         },
         "img-to-pdf": {
             "title": "So führen Sie Bilder zu einem PDF-Portfolio zusammen",
-            "category": "Convert",
+            "category": "Konvertieren",
             "intro": "Fassen Sie Fotos, Scans oder Grafiken in einem sauberen PDF-Dokument zusammen.",
             "steps": [
                 "Öffnen Sie **Bild zu PDF**.",
@@ -265,7 +265,7 @@
         },
         "ocr": {
             "title": "So machen Sie gescannte PDFs durchsuchbar (OCR)",
-            "category": "Convert",
+            "category": "Konvertieren",
             "intro": "Machen Sie Text in gescannten Dokumenten nutzbar. Verwenden Sie OCR, um Text auswählbar, durchsuchbar und kopierbar zu machen.",
             "steps": [
                 "Wählen Sie **PDF Texterkennung**.",
@@ -276,7 +276,7 @@
         },
         "rotate": {
             "title": "So korrigieren Sie die PDF-Seitenausrichtung",
-            "category": "Organize",
+            "category": "Organisieren",
             "intro": "Drehen Sie einzelne PDF-Seiten dauerhaft, um sie richtig lesbar zu machen.",
             "steps": [
                 "Wählen Sie **PDF Drehen**.",
@@ -287,7 +287,7 @@
         },
         "page-number": {
             "title": "So fügen Sie Seitenzahlen zu einem PDF hinzu",
-            "category": "Edit",
+            "category": "Bearbeiten",
             "intro": "Fügen Sie professionelle Seitenzahlen (Kopf- oder Fußzeile) hinzu, um lange Verträge oder Arbeiten zu organisieren.",
             "steps": [
                 "Öffnen Sie **PDF Seitennummern**.",
@@ -298,7 +298,7 @@
         },
         "sign": {
             "title": "So unterschreiben Sie ein PDF elektronisch",
-            "category": "Edit",
+            "category": "Bearbeiten",
             "intro": "Zeichnen und platzieren Sie Ihre digitale Unterschrift auf Verträgen oder Formularen, ohne zu drucken.",
             "steps": [
                 "Gehen Sie zu **PDF Signieren**.",
@@ -309,7 +309,7 @@
         },
         "organize": {
             "title": "So ordnen und löschen Sie PDF-Seiten",
-            "category": "Organize",
+            "category": "Organisieren",
             "intro": "Übernehmen Sie die Kontrolle über Ihre PDF-Struktur. Ordnen, löschen oder sortieren Sie Seiten visuell in Sekunden.",
             "steps": [
                 "Wählen Sie **PDF Organisieren**.",
@@ -320,7 +320,7 @@
         },
         "watermark": {
             "title": "So fügen Sie Wasserzeichen für Branding und Sicherheit hinzu",
-            "category": "Edit",
+            "category": "Bearbeiten",
             "intro": "Schützen Sie Ihr geistiges Eigentum, indem Sie Logos oder „Vertraulich“-Text auf Seiten stempeln.",
             "steps": [
                 "Wählen Sie **PDF Wasserzeichen**.",
@@ -331,7 +331,7 @@
         },
         "edit-metadata": {
             "title": "So bearbeiten Sie PDF-Titel, Autor und Metadaten",
-            "category": "Edit",
+            "category": "Bearbeiten",
             "intro": "Aktualisieren Sie versteckte PDF-Eigenschaften wie Autor und Titel für eine bessere Dateiorganisation und SEO.",
             "steps": [
                 "Öffnen Sie **PDF Metadaten**.",
@@ -342,7 +342,7 @@
         },
         "flatten": {
             "title": "So reduzieren Sie PDF-Formulare und Kommentare auf eine Ebene",
-            "category": "Organize",
+            "category": "Organisieren",
             "intro": "Sperren Sie ausfüllbare Formulare und Anmerkungen, damit Inhalte von anderen nicht mehr bearbeitet werden können.",
             "steps": [
                 "Wählen Sie **PDF Ebenen reduzieren**.",
@@ -353,7 +353,7 @@
         },
         "trim": {
             "title": "So beschneiden Sie PDF-Ränder",
-            "category": "Organize",
+            "category": "Organisieren",
             "intro": "Entfernen Sie überschüssigen Weißraum oder beschneiden Sie den sichtbaren Bereich, um das Layout für den Druck anzupassen.",
             "steps": [
                 "Gehen Sie zu **PDF Zuschneiden**.",
@@ -364,7 +364,7 @@
         },
         "compare": {
             "title": "So vergleichen Sie zwei PDFs visuell",
-            "category": "Organize",
+            "category": "Organisieren",
             "intro": "Finden Sie Unterschiede zwischen zwei Versionen eines Dokuments Seite an Seite.",
             "steps": [
                 "Wählen Sie **PDF Vergleichen**.",
@@ -375,7 +375,7 @@
         },
         "protect": {
             "title": "So schützen Sie ein PDF mit Passwort",
-            "category": "Security",
+            "category": "Sicherheit",
             "intro": "Sichern Sie vertrauliche Dokumente mit AES-Verschlüsselung auf Militärniveau und einem einzigartigen Passwort.",
             "steps": [
                 "Öffnen Sie **PDF Schützen**.",
@@ -386,7 +386,7 @@
         },
         "unlock": {
             "title": "So entsperren Sie ein passwortgeschütztes PDF",
-            "category": "Security",
+            "category": "Sicherheit",
             "intro": "Entfernen Sie bekannte Passwörter von einem PDF, um den Zugriff und das Teilen zu erleichtern.",
             "steps": [
                 "Wählen Sie **PDF Entsperren**.",
@@ -397,7 +397,7 @@
         },
         "repair": {
             "title": "So reparieren Sie beschädigte PDF-Dateien",
-            "category": "Organize",
+            "category": "Organisieren",
             "intro": "Versuchen Sie, Daten aus beschädigten oder nicht zu öffnenden PDF-Dateien wiederherzustellen.",
             "steps": [
                 "Wählen Sie **PDF Reparieren**.",
@@ -408,7 +408,7 @@
         },
         "grayscale": {
             "title": "So konvertieren Sie PDFs in Graustufen",
-            "category": "Optimize",
+            "category": "Optimieren",
             "intro": "Entfernen Sie alle Farben aus einem PDF für günstigen Schwarzweißdruck oder Archivierung.",
             "steps": [
                 "Wählen Sie **PDF in Graustufen**.",
@@ -419,7 +419,7 @@
         },
         "invert-colors": {
             "title": "So invertieren Sie PDF-Farben (Nachtmodus)",
-            "category": "Optimize",
+            "category": "Optimieren",
             "intro": "Wechseln Sie weißen Hintergrund zu schwarz für angenehmes Lesen in dunklen Umgebungen.",
             "steps": [
                 "Öffnen Sie **PDF Nachtmodus**.",
@@ -430,7 +430,7 @@
         },
         "extract-text": {
             "title": "So extrahieren Sie Text aus einem PDF",
-            "category": "Convert",
+            "category": "Konvertieren",
             "intro": "Extrahieren Sie rohen Textinhalt aus einem PDF in eine einfache Textdatei zum Kopieren oder Codieren.",
             "steps": [
                 "Gehen Sie zu **PDF Text Extrahierer**.",
@@ -441,7 +441,7 @@
         },
         "remove-annotations": {
             "title": "So entfernen Sie Anmerkungen aus einem PDF",
-            "category": "Edit",
+            "category": "Bearbeiten",
             "intro": "Bereinigen Sie ein Dokument, indem Sie alle Benutzerkommentare, Markierungen und Hervorhebungen entfernen.",
             "steps": [
                 "Wählen Sie **PDF Markierungen entfernen**.",
@@ -452,7 +452,7 @@
         },
         "redact": {
             "title": "So schwärzen Sie PDF-Text dauerhaft",
-            "category": "Security",
+            "category": "Sicherheit",
             "intro": "Überdecken Sie sensible Informationen (wie Sozialversicherungsnummern oder Namen) sicher, sodass sie nicht wiederhergestellt werden können.",
             "steps": [
                 "Öffnen Sie **PDF Schwärzen**.",
@@ -463,7 +463,7 @@
         },
         "pdf-to-ppt": {
             "title": "So konvertieren Sie PDFs in PowerPoint-Folien",
-            "category": "Convert",
+            "category": "Konvertieren",
             "intro": "Verwandeln Sie Ihre PDF-Präsentation zurück in bearbeitbare PowerPoint-Folien.",
             "steps": [
                 "Wählen Sie **PDF zu PowerPoint**.",
@@ -474,7 +474,7 @@
         },
         "excel-to-pdf": {
             "title": "So konvertieren Sie Excel-Tabellen in PDFs",
-            "category": "Convert",
+            "category": "Konvertieren",
             "intro": "Teilen Sie Tabellenkalkulationen sicher, indem Sie sie in nicht bearbeitbare, standardisierte PDFs verwandeln.",
             "steps": [
                 "Wählen Sie **Excel zu PDF**.",
@@ -485,7 +485,7 @@
         },
         "ppt-to-pdf": {
             "title": "So speichern Sie PowerPoint als PDF",
-            "category": "Convert",
+            "category": "Konvertieren",
             "intro": "Stellen Sie sicher, dass Ihre Präsentation auf jedem Bildschirm perfekt aussieht, indem Sie sie als PDF speichern.",
             "steps": [
                 "Öffnen Sie **PowerPoint zu PDF**.",
@@ -496,7 +496,7 @@
         },
         "html-to-pdf": {
             "title": "So speichern Sie Webseiten als PDF",
-            "category": "Convert",
+            "category": "Konvertieren",
             "intro": "Erfassen Sie Artikel, Belege oder Websites als saubere, offline lesbare PDF-Dokumente.",
             "steps": [
                 "Wählen Sie **Web zu PDF**.",
@@ -780,5 +780,13 @@
         "message": "Helfen Sie uns, OrbitPDF kostenlos zu halten. Wir nutzen Werbung, um unsere Server zu finanzieren und unsere Tools für alle zugänglich zu machen. Bitte deaktivieren Sie Ihren Werbeblocker, um uns zu unterstützen.",
         "button": "Ich habe ihn deaktiviert, aktualisieren",
         "dismiss": "Ohne Deaktivierung fortfahren"
+    },
+    "cookie": {
+        "title": "Wir schätzen Ihre Privatsphäre",
+        "description": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern, personalisierte Anzeigen bereitzustellen und unseren Datenverkehr zu analysieren. Durch Klicken auf „Alle akzeptieren“ stimmen Sie unserer Verwendung von Cookies zu.",
+        "googleNotice": "Google verwendet Cookies, um Anzeigen zu personalisieren und Zugriffe zu analysieren.",
+        "learnMoreGoogle": "Wie Google Daten verwendet, wenn Sie Websites oder Apps unserer Partner nutzen",
+        "accept": "Alle akzeptieren",
+        "decline": "Ablehnen"
     }
 }

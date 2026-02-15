@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ArrowLeft, BookOpen, ChevronRight, Search } from 'lucide-react';
+import { useParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import AdSpace from './AdSpace';
-
-
-
 
 // Data moved to translation.json to support multiple languages
 // function to get guides data (memoized in component)
@@ -32,7 +31,6 @@ const useGuidesData = () => {
 };
 
 interface GuidesProps {
-    onBack: () => void;
     externalSearch?: string;
 }
 
@@ -40,10 +38,8 @@ export default function Guides({ externalSearch }: GuidesProps) {
     const { t } = useTranslation();
     const toolsGuides = useGuidesData();
     const [searchTerm, setSearchTerm] = useState(externalSearch || '');
+    const { id: guideId } = useParams();
 
-    // Derived state from URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const guideId = urlParams.get('id');
     const activeGuide = guideId ? toolsGuides.find(g => g.id === guideId) || null : null;
 
     const filteredGuides = toolsGuides.filter(g =>
@@ -61,6 +57,12 @@ export default function Guides({ externalSearch }: GuidesProps) {
     if (activeGuide) {
         return (
             <div className="w-full flex justify-center gap-6 px-4">
+                <Helmet>
+                    <title>{activeGuide.title} | OrbitPDF Guides</title>
+                    <meta name="description" content={activeGuide.intro} />
+                    <link rel="canonical" href={`https://orbitpdf.com/guides/${activeGuide.id}`} />
+                </Helmet>
+
                 {/* Left Sidebar Ad (PC Only) */}
                 <div className="hidden xl:block w-[160px] min-w-[160px] flex-shrink-0 pt-20">
                     <div className="sticky top-24">
@@ -120,7 +122,7 @@ export default function Guides({ externalSearch }: GuidesProps) {
                         <div className="mt-12 pt-8 border-t border-slate-700/50 flex justify-between items-center">
                             <p className="text-slate-500 italic">{t('guides.readyToTry')}</p>
                             <a
-                                href={`/?tool=${activeGuide.id}`}
+                                href={`/${activeGuide.id}`}
                                 className="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl font-medium transition-all shadow-lg hover:shadow-blue-500/25 inline-block"
                             >
                                 {t('guides.openTool')}
@@ -137,11 +139,16 @@ export default function Guides({ externalSearch }: GuidesProps) {
                 </div>
             </div>
         );
-
     }
 
     return (
         <div className="max-w-7xl mx-auto animate-in fade-in duration-500">
+            <Helmet>
+                <title>{t('guides.title')} | OrbitPDF</title>
+                <meta name="description" content={t('guides.subtitle')} />
+                <link rel="canonical" href="https://orbitpdf.com/guides" />
+            </Helmet>
+
             {/* Header */}
             <div className="text-center mb-8">
                 <a href="/" className="inline-flex items-center text-slate-400 hover:text-white mb-4 transition-colors">
@@ -174,7 +181,7 @@ export default function Guides({ externalSearch }: GuidesProps) {
                 {filteredGuides.map(guide => (
                     <div
                         key={guide.id}
-                        onClick={() => window.location.href = `/guides.html?id=${guide.id}`}
+                        onClick={() => window.location.href = `/guides/${guide.id}`}
                         className="group bg-slate-900/40 border border-slate-800 hover:border-blue-500/50 rounded-2xl p-3 md:p-6 cursor-pointer transition-all hover:bg-slate-800/60 flex flex-col h-full"
                     >
                         <div className="mb-2 md:mb-4">
@@ -195,6 +202,7 @@ export default function Guides({ externalSearch }: GuidesProps) {
                 ))}
             </div>
 
+            {/* Empty State */}
             {filteredGuides.length === 0 && (
                 <div className="text-center py-20 text-slate-500">
                     {t('guides.noGuidesFound', { query: searchTerm })}

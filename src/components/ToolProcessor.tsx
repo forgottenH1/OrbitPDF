@@ -1362,6 +1362,18 @@ const ToolProcessor: React.FC<ToolProcessorProps> = ({ toolId, toolName, onBack 
                         </div>
                     )}
 
+
+
+                    {/* SEO Description - Inside Tool Box */}
+                    <div className="mt-12 pt-8 border-t border-white/10 w-full text-center max-w-2xl mx-auto">
+                        <h2 className="text-lg font-semibold mb-2 text-slate-200">
+                            {toolName}
+                        </h2>
+                        <p className="text-slate-400 text-sm leading-relaxed">
+                            {t(`guidesData.${toolId}.intro`, { defaultValue: t(`tools.${toolId}.desc`) })}
+                        </p>
+                    </div>
+
                 </div>
 
 
@@ -1373,7 +1385,7 @@ const ToolProcessor: React.FC<ToolProcessorProps> = ({ toolId, toolName, onBack 
                     <AdSpace placement="sidebar-right" />
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

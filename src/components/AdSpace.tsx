@@ -10,6 +10,24 @@ interface AdSpaceProps {
 
 const AdSpace: React.FC<AdSpaceProps> = ({ placement, className = '' }) => {
     const { t } = useTranslation();
+    const [consent, setConsent] = React.useState<string | null>(() => {
+        if (typeof window !== 'undefined') {
+            return localStorage.getItem('orbitpdf_consent');
+        }
+        return null;
+    });
+
+    React.useEffect(() => {
+        const handleConsentUpdate = () => {
+            setConsent(localStorage.getItem('orbitpdf_consent'));
+        };
+
+        window.addEventListener('orbitpdf_consent_updated', handleConsentUpdate);
+        return () => window.removeEventListener('orbitpdf_consent_updated', handleConsentUpdate);
+    }, []);
+
+    // If explicitly declined, do not render ads.
+    // MOVED: strict check must allow hooks to run first.
 
     // Check if AdSense is exclusive for this zone
     const isAdSenseExclusive = (settingsData as any).adsense?.[placement] === true;
@@ -72,6 +90,11 @@ const AdSpace: React.FC<AdSpaceProps> = ({ placement, className = '' }) => {
     }, [activeAd]);
 
     const isSidebar = placement === 'sidebar-left' || placement === 'sidebar-right';
+
+    // If explicitly declined, do not render ads.
+    if (consent === 'false') {
+        return null;
+    }
 
     // If there is an active ad, render it
     if (activeAd) {

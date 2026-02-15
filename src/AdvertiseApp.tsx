@@ -92,8 +92,12 @@ const AdvertiseApp = () => {
     );
 };
 
+import { BrowserRouter } from 'react-router-dom';
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
-        <AdvertiseApp />
+        <BrowserRouter>
+            <AdvertiseApp />
+        </BrowserRouter>
     </React.StrictMode>,
 );
