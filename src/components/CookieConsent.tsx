@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ShieldCheck, X } from 'lucide-react';
-import { ShieldCheck, X } from 'lucide-react';
 // import LegalModal from './LegalModal'; // We can reuse this or link to it
 
 const CookieConsent: React.FC = () => {
