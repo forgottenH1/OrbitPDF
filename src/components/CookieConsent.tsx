@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ShieldCheck, X } from 'lucide-react';
-import LegalModal from './LegalModal'; // We can reuse this or link to it
+import { ShieldCheck, X } from 'lucide-react';
+// import LegalModal from './LegalModal'; // We can reuse this or link to it
 
 const CookieConsent: React.FC = () => {
     const { t } = useTranslation();
     const [isVisible, setIsVisible] = useState(false);
-    const [showDetails, setShowDetails] = useState(false);
 
     useEffect(() => {
         // slight delay to not block initial render paint
